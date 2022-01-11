@@ -7,16 +7,10 @@ time to go back, you realize that your fuel is running out and the
    not. Function should return true (1 in Prolog and NASM) if it is possible and false 
    (0 in Prolog and NASM) if not. The input values are always positive. */
 
-   distanceToPump = 51
-   mpg = 25
-   fuelLeft = 2
-
- function zeroFuel (distanceToPump, mpg, fuelLeft) {
+   function zeroFuel (distanceToPump, mpg, fuelLeft) {
     if (distanceToPump <= (mpg * fuelLeft)) {
-        console.log('1')
+        return true
     } else {
-        console.log('0')
+        return false
     }
   }
-
-  zeroFuel(distanceToPump, mpg, fuelLeft)
