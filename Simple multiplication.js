@@ -1,7 +1,3 @@
-/* This kata is about multiplying a given number by eight if it 
-is an even number and by nine otherwise. */
-
-
 function simpleMultiplication(number) {
     x = 0
     if (number % 2 === 0) {

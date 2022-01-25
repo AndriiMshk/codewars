@@ -1,5 +1,3 @@
 function getDecimal(n){
-    if (n < 0) 
-     n = n * (-1)
-   return n - Math.floor(n)
- }
+    return Math.abs(n%1)
+    } 
