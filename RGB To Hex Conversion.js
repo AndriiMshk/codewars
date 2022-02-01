@@ -1,5 +1,9 @@
 function rgb(r, g, b){
-    return [].map.call(arguments, function(arg) {
-     return arg <= 0 ? '00' : arg > 255 ? 'FF' : arg.toString(16);
-   }).join('').toUpperCase();
- }
+  return toHex(r)+toHex(g)+toHex(b);
+}
+
+function toHex(d) {
+    if(d < 0 ) {return "00";}
+    if(d > 255 ) {return "FF";}
+    return  ("0"+(Number(d).toString(16))).slice(-2).toUpperCase()
+}
