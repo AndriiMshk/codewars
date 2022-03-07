@@ -6,4 +6,8 @@ function add(num1, num2) {
       for (let i = length -1; i >= 0; i--) {
         res.push((+num1[i] || 0) + +(num2[i] || 0))
       } return +res.join('')
+
+      //11111111
+      //1111111
+
   }
